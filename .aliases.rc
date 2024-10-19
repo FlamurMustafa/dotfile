@@ -1,0 +1,26 @@
+alias ..='cd ..'
+
+alias l='ll'
+
+alias vimb='vim ~/.bashrc.user'
+alias vimv='vim ~/.vimrc'
+alias vima='vim ~/.aliases'
+
+alias gs='git status'
+alias gb='git branch'
+alias gl='git log'
+alias sv='source env.bash'
+
+alias grep='grep --color=always'
+alias ogrep='grep --color=always -nr --exclude=tags --exclude-dir={gen,unittest,test,build,out,doc}'
+
+alias reseth='git reset HEAD --hard'
+alias gc='git checkout'
+
+alias src='source ~/.bashrc'
+
+alias showpath='echo $PATH | sed "s/:/ /g" | awk '"'"'{for (i = 2; i <= NF; i++) {printf "\n%s ", $i}; printf "\n"}'"'"''
+
+alias ocut='cut -d":" -f1'
+
+alias newenv='env -i bash --norc --noprofile'
